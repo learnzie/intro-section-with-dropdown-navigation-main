@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="flex">
+          <img src="./images/logo.svg" alt="" />
+          <ul>
+            <li>
+              <div class="dropdown" onclick="showDropdown('f')">
+                <div class="dropdown-btn">
+                  Features<iconify-icon
+                    icon="dashicons:arrow-down-alt2"
+                  ></iconify-icon>
+                </div>
+                <div class="dropdown-content features">
+                  <div>
+                    <iconify-icon
+                      style="color: rgb(93, 50, 185)"
+                      icon="ri:todo-line"
+                    ></iconify-icon
+                    >Todo List
+                  </div>
+                  <div>
+                    <iconify-icon
+                      style="color: paleturquoise"
+                      icon="uil:calender"
+                    ></iconify-icon
+                    >Calendar
+                  </div>
+                  <div>
+                    <iconify-icon icon="openmoji:bell"></iconify-icon>Reminders
+                  </div>
+                  <div>
+                    <iconify-icon
+                      style="color: blueviolet"
+                      icon="bxs:time-five"
+                    ></iconify-icon
+                    >Planning
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown" onclick="showDropdown('c')">
+                <div class="dropdown-btn">
+                  Company<iconify-icon
+                    icon="dashicons:arrow-down-alt2"
+                  ></iconify-icon>
+                </div>
+                <div class="dropdown-content company">
+                  <div>History</div>
+                  <div>Our Team</div>
+                  <div>Blog</div>
+                </div>
+              </div>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="log-reg">
+          <div>Login</div>
+          <div class="reg">Register</div>
+        </div>
+
+        <div class="sidelink" id="sideLink">
+          <iconify-icon
+            class="click"
+            icon="humbleicons:times"
+            onclick="hideMenu()"
+          ></iconify-icon>
+          <div class="dropdown" onclick="showDrop('g')">
+            <div class="dropdown-btn">
+              Features<iconify-icon
+                icon="dashicons:arrow-down-alt2"
+              ></iconify-icon>
+            </div>
+            <div class="dropdown-content feature">
+              <div>
+                <iconify-icon
+                  style="color: rgb(93, 50, 185)"
+                  icon="ri:todo-line"
+                ></iconify-icon
+                >Todo List
+              </div>
+              <div>
+                <iconify-icon
+                  style="color: paleturquoise"
+                  icon="uil:calender"
+                ></iconify-icon
+                >Calendar
+              </div>
+              <div>
+                <iconify-icon icon="openmoji:bell"></iconify-icon>Reminders
+              </div>
+              <div>
+                <iconify-icon
+                  style="color: blueviolet"
+                  icon="bxs:time-five"
+                ></iconify-icon
+                >Planning
+              </div>
+            </div>
+          </div>
+          <div class="dropdown" onclick="showDrop('d')">
+            <div class="dropdown-btn">
+              Company<iconify-icon
+                icon="dashicons:arrow-down-alt2"
+              ></iconify-icon>
+            </div>
+            <div class="dropdown-content companys">
+              <div>History</div>
+              <div>Our Team</div>
+              <div>Blog</div>
+            </div>
+          </div>
+          <div>Careers</div>
+          <div>About</div>
+          <div class="log-reg">
+            <div>Login</div>
+            <div class="reg">Register</div>
+          </div>
+        </div>
+        <iconify-icon
+          class="click"
+          icon="charm:menu-hamburger"
+          onclick="showMenu()"
+        ></iconify-icon>
+        <div class="backdrop"></div>
+      </nav>
+      <div class="container">
+        <div class="remote-work">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+
+          <div class="d-flex">
+            <img
+              class="resize"
+              src="./images/client-databiz.svg"
+              alt="client-databiz"
+            />
+            <img src="./images/client-audiophile.svg" alt="client-audiophile" />
+            <img
+              class="resize"
+              src="./images/client-meet.svg"
+              alt="client-meet"
+            />
+            <img
+              class="resize"
+              src="./images/client-maker.svg"
+              alt="client-maker"
+            />
+          </div>
+        </div>
+        <div class="img">
+          <img
+            class="desktop-img"
+            src="./images/image-hero-desktop.png"
+            alt="image-hero-desktop"
+          />
+          <img
+            class="mobile-img"
+            src="./images/image-hero-mobile.png"
+            alt="image-hero-mobile"
+          />
+        </div>
+      </div>
+    </header>
+    <script src="./script.js"></script>
+  </body>
+</html>
