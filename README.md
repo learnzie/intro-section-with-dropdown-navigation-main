@@ -1,7 +1,4 @@
 ## The challenge
-
-The challenge is to build out this intro section with dropdown navigation and get it looking as close to the design as possible.
-
 The users should be able to:
 
 - View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
